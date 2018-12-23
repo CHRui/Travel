@@ -12,6 +12,11 @@ import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
+document.addEventListener('touchmove', function (event) {
+  event.preventDefault()
+}, {
+  passive: false
+})
 Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
